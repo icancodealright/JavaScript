@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!--navigation starts here-->
+    <div class="row">
+        <div class="col s12">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">TO DO</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">LIST</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--navigation ends here-->
+    <div class="container section ">
+        <div class="row">
+            <div class="col s10">
+
+                <div class="input-field">
+                    <input id="todo_data" type="text">
+                    <label for="todo_data">Add Your to do data here</label>
+                </div>
+            </div>
+            <div class="col s2">
+                <a class="btn-floating btn-large waves-effect waves-light red"
+                    onclick="saveMyTodoData(document.getElementById('todo_data').value);">
+                    <i class="material-icons">add</i></a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container" id="main-content">
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
